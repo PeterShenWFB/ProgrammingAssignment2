@@ -2,12 +2,12 @@
 ## functions do
 #
 # Matrix Inversion
-# This R program contains functions that perform "continuous" matrix inversion vector.
-# One can repeatly use this fuction to perform complex matrix inversion.
+# This R program contains functions that perform calculates of an inverse matrix.
+# The matrix and inverse matrix are cached for repeatly usage.
 #
 
-## Write a short comment describing this function
-# makeCacheMatrix caches the input square matrix to global environment
+#
+# makeCacheMatrix proivdes a list of functions to store and retrieve matrix and inverse matrix
 #
 library(matrixcalc)
 makeCacheMatrix <- function(x = matrix()) {
@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+#
 # cacheSolve returns inverse of a makeCacheMatrix object.
 # If an inverse already cached, it returns the cached inverse matrix.
 # Otherwise, it calculates the inverse matrix, caches it and returns it.
